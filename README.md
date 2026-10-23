@@ -42,24 +42,15 @@ setup, and optional hosted Hytale Javadoc injection.
 > On Windows, use `./gradlew.bat` or `gradlew.bat` instead of `./gradlew`. The Gradle wrapper is
 > included so you do not need to install Gradle separately; only Java is required.
 
-When the server starts, the output may prompt you to authorize your Hytale server. After that, you
-can begin developing your plugin while the server handles local development runs.
-
-From here, the [HytaleModding guides](https://hytalemodding.dev/en/docs/guides/plugin/build-and-test)
-cover more details.
-
-## Hytale Gradle Plugin
-
-This template is built around AzureDoom's `com.azuredoom.hytale-tools` Gradle plugin.
-
-The plugin is configured in `build.gradle.kts`:
-
-```kotlin
-plugins {
-    idea
-    java
-    id("com.azuredoom.hytale-tools") version "1.+"
-}
+```
+src/main/java/dev/timagutmensch/whip/
+  BalolaWhipPlugin.java                        registers the interaction codec
+  interaction/ProlongPositiveEffectsInteraction.java   the extension logic
+src/main/resources/
+  Server/Item/Items/Tool/Whip/Tool_Whip_Balola.json    item + interaction vars + recipe
+  Server/Languages/en-US/items.lang                    display name and description
+  Common/Items/Tools/Whip/Balola_Whip.blockymodel      model
+  Common/Items/Tools/Whip/Balola_Whip_Texture.png      texture (64×64)
 ```
 
 The AzureDoom Maven repository is configured in `settings.gradle.kts`:
