@@ -1,49 +1,36 @@
-# Hytale Plugin Template
+# Balola Whip
 
-A ready-to-use starting point for creating Hytale server plugins with Java, _or Kotlin_. If you've
-been using the Asset Editor and want to start writing server-side logic — custom commands, event
-handling, gameplay systems — this is the simplest place to begin.
+A Hytale mod that adds the **Balola Whip** — a light whip that barely hurts, but stretches the
+positive status effects already on whatever it hits.
 
-This template uses the [Hytale Gradle Plugin](https://github.com/AzureDoom/Hytale-Gradle-Plugin),
-a Gradle plugin maintained by AzureDoom for Hytale mod/plugin development. It handles the repetitive
-project setup work for you, including manifest generation, validation, local server runs, IDE source
-setup, and optional hosted Hytale Javadoc injection.
+## What it does
 
-## How to start
+- **Quick lash** (tap): 1 damage, **+20 s** to each positive effect on the target
+- **Held lash** (hold ≥ 1.39 s, then release): 5 damage, **+50 s**
+- Never *applies* an effect — only extends ones already present
+- Debuffs and infinite effects are left alone
+- Cap: an effect can be pushed at most **+240 s** past its own base duration
+- 200 durability, 1 point per connecting hit
 
-1. Copy the template by downloading it or using the **Use this template** button.
-2. [Configure or install the Java SDK](https://hytalemodding.dev/en/docs/guides/plugin/setting-up-env)
-   to use Java 25. JetBrains Runtime is recommended for the best hot-reload/debugging experience.
-3. Open the project in your favorite IDE. We recommend
-   [IntelliJ IDEA](https://www.jetbrains.com/idea/download).
-4. Update the project values in `gradle.properties`:
-    - `rootProject.name` in `settings.gradle.kts`
-    - `group`
-    - `manifest_group`
-    - `mod_name`
-    - `mod_id`
-    - `main_class`
-    - `mod_author`
-    - `mod_description`
-    - `mod_url`
-5. Optionally run `./gradlew` if your IDE does not automatically sync the project.
-6. Prepare the Hytale development environment:
+Mechanic-wise it is the vanilla steel flail: `Interactions.Primary` points at the stock
+`Club_Flail_Attack` chain (`Charging` → `Chaining` → `Swing_Left`/`Swing_Right`, or the charged spin
+swing), so the animations, trails, hit detection and knockback are all inherited. Only the three
+`*_Damage` interaction vars are overridden to change damage and add the effect extension.
 
-   ```bash
-   ./gradlew setupHytaleDev
-   ```
+## Crafting
 
-7. Run the local development server:
+Workbench → Tools, 3.0 s:
 
-   ```bash
-   ./gradlew runServer
-   ```
+| ingame item | qty |
+|---|---|
+| `Deco_Rope` | 4 |
+| `Ingredient_Stick` | 2 |
+| `Ingredient_Leather_Light` | 2 |
 
-> On Windows, use `./gradlew.bat` or `gradlew.bat` instead of `./gradlew`. The Gradle wrapper is
-> included so you do not need to install Gradle separately; only Java is required.
+## Layout
 
 ```
-src/main/java/dev/timagutmensch/whip/
+src/main/java/dev/balola/whip/
   BalolaWhipPlugin.java                        registers the interaction codec
   interaction/ProlongPositiveEffectsInteraction.java   the extension logic
 src/main/resources/
@@ -53,100 +40,19 @@ src/main/resources/
   Common/Items/Tools/Whip/Balola_Whip_Texture.png      texture (64×64)
 ```
 
-The AzureDoom Maven repository is configured in `settings.gradle.kts`:
-
-```kotlin
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        mavenCentral()
-        maven {
-            name = "AzureDoom Maven"
-            url = uri("https://maven.azuredoom.com/mods")
-        }
-    }
-}
-```
-
-Most plugin-specific settings are controlled from `gradle.properties` and passed into the
-`hytaleTools` block in `build.gradle.kts`. This keeps common project metadata in one easy-to-edit
-place.
-
-For full plugin documentation, configuration options, tasks, and multi-project setup, visit the
-[Hytale Gradle Plugin repository](https://github.com/AzureDoom/Hytale-Gradle-Plugin).
-
-## Useful commands
+## Building
 
 ```bash
-# Sync/setup the local Hytale development environment
-./gradlew setupHytaleDev
-
-# Run the local Hytale server
-./gradlew runServer
-
-# Run the server with debugging and hot swap enabled
-./gradlew runServer -Ddebug=true -Dhotswap=true
-
-# Check your JVM and hot swap setup
-./gradlew hytaleJvmDoctor
-
-# Build the plugin
 ./gradlew build
-
-# Refresh dependencies if something fails to resolve
-./gradlew build --refresh-dependencies
+cp build/libs/BalolaWhip-0.1.0.jar <Hytale>/UserData/Mods/
 ```
 
-## Project structure
+Then enable the mod for a world (world settings → Mods). Java 25, targets Hytale 0.7.4.
 
-```text
-src/main/java/        Plugin source code
-src/main/resources/   Plugin resources, including manifest.json
-gradle.properties     Main template configuration
-build.gradle.kts      Gradle build and Hytale Gradle Plugin configuration
-settings.gradle.kts   Plugin repositories and project name
-```
+## Notes
 
-## Manifest configuration
-
-The generated `manifest.json` is driven by the values in `gradle.properties`, including:
-
-- `manifest_group`
-- `mod_id`
-- `version`
-- `mod_description`
-- `mod_author`
-- `mod_url`
-- `main_class`
-- `manifest_dependencies`
-- `manifest_opt_dependencies`
-- `manifestServerVersion`
-
-After changing these values, run:
-
-```bash
-./gradlew updatePluginManifest
-```
-
-## Troubleshooting
-
-- **Gradle sync fails in IntelliJ** — Check that Java 25 is installed and configured under
-  **File → Project Structure → SDKs**.
-- **The Hytale Gradle Plugin does not resolve** — Make sure `settings.gradle.kts` includes the
-  AzureDoom Maven repository at `https://maven.azuredoom.com/mods`.
-- **Build fails with missing dependencies** — Run `./gradlew build --refresh-dependencies` and make
-  sure you have internet access.
-- **Permission denied on `./gradlew`** — Run `chmod +x gradlew` on macOS/Linux.
-- **Hot reload or enhanced class redefinition does not work** — Use JetBrains Runtime and try
-  `./gradlew hytaleJvmDoctor` to verify your JVM setup.
-
-## Resources
-
-- [Hytale Gradle Plugin](https://github.com/AzureDoom/Hytale-Gradle-Plugin)
-- [Hytale Modding Guides](https://hytalemodding.dev)
-- [Hytale Modding Discord](https://discord.gg/hytalemodding)
-
-## License
-
-Add your own license after copying the template. We recommend MIT, BSD, or Apache to keep the
-modding community open.
+- The interaction is registered as `ProlongPositiveEffects` and referenced from the item's
+  `InteractionVars`; it is server-side only and sends nothing custom to the client.
+- The item keeps the base-game flail icon until a render of the whip replaces it.
+- Model node names (`Handle`, `Chain`, `Chain2`–`Chain4`) must stay as-is: both the inherited
+  animations and the chain trail effects address them by name.
