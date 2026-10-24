@@ -2,8 +2,8 @@
   "Type": "Charging",
   "Effects": {
     "ItemAnimationId": "SpinSwingLeftCharging",
-    "LocalSoundEventId": "SFX_Flail_Charge_Local",
-    "WorldSoundEventId": "SFX_Flail_Charge"
+    "LocalSoundEventId": "SFX_Whip_Charge_Local",
+    "WorldSoundEventId": "SFX_Whip_Charge"
   },
   "AllowIndefiniteHold": false,
   "Next": {

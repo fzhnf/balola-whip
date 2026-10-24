@@ -97,7 +97,9 @@
                 "TargetNodeName": "Chain4",
                 "TargetEntityPart": "PrimaryItem"
               }
-            ]
+            ],
+            "LocalSoundEventId": "SFX_Whip_Swing_Local",
+            "WorldSoundEventId": "SFX_Whip_Swing"
           }
         }
       ]
@@ -133,7 +135,9 @@
                 "TargetNodeName": "Chain4",
                 "TargetEntityPart": "PrimaryItem"
               }
-            ]
+            ],
+            "LocalSoundEventId": "SFX_Whip_Swing_Local",
+            "WorldSoundEventId": "SFX_Whip_Swing"
           }
         }
       ]
@@ -169,7 +173,9 @@
                 "TargetNodeName": "Chain4",
                 "TargetEntityPart": "PrimaryItem"
               }
-            ]
+            ],
+            "LocalSoundEventId": "SFX_Whip_Swing_Local",
+            "WorldSoundEventId": "SFX_Whip_Swing"
           }
         }
       ]
