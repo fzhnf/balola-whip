@@ -115,30 +115,30 @@
                       "orientation": {"x": 0, "y": 0, "z": -0.5, "w": 0.86603},
                       "shape": {
                         "type": "box",
-                        "offset": {"x": 6, "y": 0, "z": 0},
+                        "offset": {"x": 8.36603, "y": 0.36603, "z": 0},
                         "stretch": {"x": 1, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 12, "y": 9, "z": 4}
+                          "size": {"x": 14, "y": 7, "z": 2}
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 16, "y": 31},
+                            "offset": {"x": 14, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "right": {
-                            "offset": {"x": 32, "y": 31},
+                            "offset": {"x": 34, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 16, "y": 31},
+                            "offset": {"x": 16, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
                           "left": {
-                            "offset": {"x": 56, "y": 31},
+                            "offset": {"x": 56, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -148,7 +148,7 @@
                             "angle": 0
                           },
                           "bottom": {
-                            "offset": {"x": 52, "y": 33},
+                            "offset": {"x": 52, "y": 35},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           }
@@ -162,34 +162,34 @@
                         {
                           "id": "6",
                           "name": "Chain-Side",
-                          "position": {"x": -6, "y": 0, "z": 0},
+                          "position": {"x": -8.36603, "y": -0.36603, "z": 0},
                           "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 6, "y": 0, "z": 0},
+                            "offset": {"x": 8.36603, "y": 0, "z": 0.36603},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 12, "y": 9, "z": 4}
+                              "size": {"x": 14, "y": 7, "z": 2}
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 16, "y": 31},
+                                "offset": {"x": 14, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 32, "y": 31},
+                                "offset": {"x": 34, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 16, "y": 31},
+                                "offset": {"x": 16, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 56, "y": 31},
+                                "offset": {"x": 56, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -199,7 +199,7 @@
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 52, "y": 33},
+                                "offset": {"x": 52, "y": 35},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               }
@@ -213,34 +213,34 @@
                         {
                           "id": "7",
                           "name": "Chain2",
-                          "position": {"x": 6, "y": 0, "z": 0},
+                          "position": {"x": 3.63397, "y": -0.36603, "z": 0},
                           "orientation": {"x": 0.00756, "y": 0.00436, "z": -0.49998, "w": 0.86599},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 6, "y": 0, "z": 0},
+                            "offset": {"x": 7.73216, "y": 2.73199, "z": -0.01277},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 12, "y": 9, "z": 3}
+                              "size": {"x": 14, "y": 7, "z": 2}
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 28, "y": 31},
+                                "offset": {"x": 26, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "right": {
-                                "offset": {"x": 44, "y": 31},
+                                "offset": {"x": 45, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "front": {
-                                "offset": {"x": 28, "y": 31},
+                                "offset": {"x": 28, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
                               "left": {
-                                "offset": {"x": 20, "y": 31},
+                                "offset": {"x": 20, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -250,7 +250,7 @@
                                 "angle": 0
                               },
                               "bottom": {
-                                "offset": {"x": 28, "y": 34},
+                                "offset": {"x": 28, "y": 35},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               }
@@ -264,34 +264,34 @@
                             {
                               "id": "8",
                               "name": "Chain2-Side",
-                              "position": {"x": -6, "y": 0, "z": 0},
+                              "position": {"x": -7.73216, "y": -2.73199, "z": 0.01277},
                               "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 6, "y": 0, "z": 0},
+                                "offset": {"x": 7.73216, "y": 0.01277, "z": 2.73199},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 12, "y": 9, "z": 3}
+                                  "size": {"x": 14, "y": 7, "z": 2}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 28, "y": 31},
+                                    "offset": {"x": 26, "y": 33},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 44, "y": 31},
+                                    "offset": {"x": 45, "y": 33},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 28, "y": 31},
+                                    "offset": {"x": 28, "y": 33},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 20, "y": 31},
+                                    "offset": {"x": 20, "y": 33},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
@@ -301,7 +301,7 @@
                                     "angle": 0
                                   },
                                   "bottom": {
-                                    "offset": {"x": 28, "y": 34},
+                                    "offset": {"x": 28, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -315,44 +315,44 @@
                             {
                               "id": "9",
                               "name": "Chain3",
-                              "position": {"x": 6, "y": 0, "z": 0},
+                              "position": {"x": 4.26784, "y": -2.73199, "z": 0.01277},
                               "orientation": {"x": -0.00806, "y": -0.00334, "z": -0.38267, "w": 0.92384},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 6, "y": 0, "z": 0},
+                                "offset": {"x": 7.06973, "y": 4.12193, "z": 0.0698},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 12, "y": 9, "z": 2}
+                                  "size": {"x": 14, "y": 7, "z": 1}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 40, "y": 31},
+                                    "offset": {"x": 38, "y": 32},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "right": {
-                                    "offset": {"x": 33, "y": 31},
+                                    "offset": {"x": 21, "y": 32},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "front": {
-                                    "offset": {"x": 40, "y": 31},
+                                    "offset": {"x": 40, "y": 32},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "left": {
-                                    "offset": {"x": 57, "y": 31},
+                                    "offset": {"x": 45, "y": 32},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "top": {
-                                    "offset": {"x": 40, "y": 34},
+                                    "offset": {"x": 28, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
                                   "bottom": {
-                                    "offset": {"x": 40, "y": 35},
+                                    "offset": {"x": 28, "y": 35},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   }
@@ -366,44 +366,44 @@
                                 {
                                   "id": "10",
                                   "name": "Chain3-Side",
-                                  "position": {"x": -6, "y": 0, "z": 0},
+                                  "position": {"x": -7.06973, "y": -4.12193, "z": -0.0698},
                                   "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                                   "shape": {
                                     "type": "box",
-                                    "offset": {"x": 6, "y": 0, "z": 0},
+                                    "offset": {"x": 7.06973, "y": -0.0698, "z": 4.12193},
                                     "stretch": {"x": 1, "y": 1, "z": 1},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 12, "y": 9, "z": 2}
+                                      "size": {"x": 14, "y": 7, "z": 1}
                                     },
                                     "textureLayout": {
                                       "back": {
-                                        "offset": {"x": 40, "y": 31},
+                                        "offset": {"x": 38, "y": 32},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "right": {
-                                        "offset": {"x": 33, "y": 31},
+                                        "offset": {"x": 21, "y": 32},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "front": {
-                                        "offset": {"x": 40, "y": 31},
+                                        "offset": {"x": 40, "y": 32},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "left": {
-                                        "offset": {"x": 57, "y": 31},
+                                        "offset": {"x": 45, "y": 32},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "top": {
-                                        "offset": {"x": 40, "y": 34},
+                                        "offset": {"x": 28, "y": 35},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
                                       "bottom": {
-                                        "offset": {"x": 40, "y": 35},
+                                        "offset": {"x": 28, "y": 35},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       }
@@ -417,7 +417,7 @@
                                 {
                                   "id": "11",
                                   "name": "Chain4",
-                                  "position": {"x": 6, "y": 0, "z": 0},
+                                  "position": {"x": 4.93027, "y": -4.12193, "z": -0.0698},
                                   "orientation": {"x": 0.00865, "y": 0.00114, "z": -0.13052, "w": 0.99141},
                                   "shape": {
                                     "type": "none",
@@ -497,20 +497,20 @@
                                       "orientation": {"x": -0.5, "y": 0.5, "z": 0.5, "w": 0.5},
                                       "shape": {
                                         "type": "box",
-                                        "offset": {"x": 0, "y": 0, "z": 0.5},
+                                        "offset": {"x": -0.01593, "y": -3.00031, "z": 4.49974},
                                         "stretch": {"x": 1, "y": 1.2, "z": 1.2},
                                         "settings": {
                                           "isPiece": false,
-                                          "size": {"x": 15, "y": 29, "z": 1}
+                                          "size": {"x": 7, "y": 29, "z": 1}
                                         },
                                         "textureLayout": {
                                           "back": {
-                                            "offset": {"x": 0, "y": 12},
+                                            "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
                                             "angle": 0
                                           },
                                           "front": {
-                                            "offset": {"x": 0, "y": 12},
+                                            "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
                                             "angle": 0
                                           }
@@ -585,20 +585,20 @@
                                       "orientation": {"x": 0.70711, "y": -0.70711, "z": 0, "w": 0},
                                       "shape": {
                                         "type": "box",
-                                        "offset": {"x": 0, "y": 0, "z": 0.5},
+                                        "offset": {"x": -3.99974, "y": -3.00031, "z": 0.48407},
                                         "stretch": {"x": 1, "y": 1.2, "z": 1.2},
                                         "settings": {
                                           "isPiece": false,
-                                          "size": {"x": 15, "y": 29, "z": 1}
+                                          "size": {"x": 7, "y": 29, "z": 1}
                                         },
                                         "textureLayout": {
                                           "back": {
-                                            "offset": {"x": 0, "y": 12},
+                                            "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
                                             "angle": 0
                                           },
                                           "front": {
-                                            "offset": {"x": 0, "y": 12},
+                                            "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
                                             "angle": 0
                                           }
