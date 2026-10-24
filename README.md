@@ -5,8 +5,9 @@ positive status effects already on whatever it hits.
 
 ## What it does
 
-- **Quick lash** (tap): 1 damage, **+20 s** to each positive effect on the target
-- **Held lash** (hold ≥ 1.39 s, then release): 5 damage, **+50 s**
+- **Quick lash** (tap): no damage, **+20 s** to each positive effect on the target
+- **Held lash** (hold ≥ 1.39 s, then release): **+50 s**, still no damage
+- Deals **no damage at all**, so it never wears the target's armour
 - Never *applies* an effect — only extends ones already present
 - Debuffs and infinite effects are left alone
 - Cap: an effect can be pushed at most **+240 s** past its own base duration

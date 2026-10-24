@@ -183,108 +183,42 @@
     "Club_Flail_Swing_Left_Damage": {
       "Interactions": [
         {
-          "Type": "Parallel",
-          "Interactions": [
-            {
-              "Interactions": [
-                {
-                  "Parent": "Club_Flail_Swing_Left_Damage",
-                  "DamageCalculator": {
-                    "Type": "Absolute",
-                    "BaseDamage": {
-                      "Physical": 1
-                    }
-                  },
-                  "Next": {
-                    "Type": "ModifyInventory",
-                    "AdjustHeldItemDurability": -1
-                  }
-                }
-              ]
-            },
-            {
-              "Interactions": [
-                {
-                  "Type": "ProlongPositiveEffects",
-                  "Entity": "Target",
-                  "BonusSeconds": 20,
-                  "MaxBonusSeconds": 240
-                }
-              ]
-            }
-          ]
+          "Type": "ProlongPositiveEffects",
+          "Entity": "Target",
+          "BonusSeconds": 20,
+          "MaxBonusSeconds": 240,
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemDurability": -1
+          }
         }
       ]
     },
     "Club_Flail_Swing_Right_Damage": {
       "Interactions": [
         {
-          "Type": "Parallel",
-          "Interactions": [
-            {
-              "Interactions": [
-                {
-                  "Parent": "Club_Flail_Swing_Right_Damage",
-                  "DamageCalculator": {
-                    "Type": "Absolute",
-                    "BaseDamage": {
-                      "Physical": 1
-                    }
-                  },
-                  "Next": {
-                    "Type": "ModifyInventory",
-                    "AdjustHeldItemDurability": -1
-                  }
-                }
-              ]
-            },
-            {
-              "Interactions": [
-                {
-                  "Type": "ProlongPositiveEffects",
-                  "Entity": "Target",
-                  "BonusSeconds": 20,
-                  "MaxBonusSeconds": 240
-                }
-              ]
-            }
-          ]
+          "Type": "ProlongPositiveEffects",
+          "Entity": "Target",
+          "BonusSeconds": 20,
+          "MaxBonusSeconds": 240,
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemDurability": -1
+          }
         }
       ]
     },
     "Club_Flail_Spin_Swing_Left_Charged_Damage": {
       "Interactions": [
         {
-          "Type": "Parallel",
-          "Interactions": [
-            {
-              "Interactions": [
-                {
-                  "Parent": "Club_Flail_Spin_Swing_Left_Charged_Damage",
-                  "DamageCalculator": {
-                    "Type": "Absolute",
-                    "BaseDamage": {
-                      "Physical": 5
-                    }
-                  },
-                  "Next": {
-                    "Type": "ModifyInventory",
-                    "AdjustHeldItemDurability": -1
-                  }
-                }
-              ]
-            },
-            {
-              "Interactions": [
-                {
-                  "Type": "ProlongPositiveEffects",
-                  "Entity": "Target",
-                  "BonusSeconds": 50,
-                  "MaxBonusSeconds": 240
-                }
-              ]
-            }
-          ]
+          "Type": "ProlongPositiveEffects",
+          "Entity": "Target",
+          "BonusSeconds": 50,
+          "MaxBonusSeconds": 240,
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemDurability": -1
+          }
         }
       ]
     }

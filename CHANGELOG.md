@@ -12,8 +12,10 @@ First release. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).
 
 - **Balola Whip** (`Tool_Whip_Balola`) — a light one-handed whip that extends the positive status
   effects already on the entity it hits.
-  - Quick lash (tap): 1 damage, **+20 s** to every positive effect on the target.
-  - Held lash (hold ≥ 1.39 s, then release): 5 damage, **+50 s**.
+  - Quick lash (tap): **+20 s** to every positive effect on the target, no damage.
+  - Held lash (hold ≥ 1.39 s, then release): **+50 s**, no damage.
+  - Deals no damage, so it never wears the target's armour (armour durability loss is
+    per-damage-cause, not per-damage-point, so 0 damage was not enough).
   - Never applies an effect, only prolongs existing ones; debuffs and infinite effects are skipped.
   - Cap: an effect can be pushed at most **+240 s** past its own base duration.
   - 200 durability, 1 point per connecting hit.
