@@ -174,8 +174,8 @@
                 "TargetEntityPart": "PrimaryItem"
               }
             ],
-            "LocalSoundEventId": "SFX_Whip_Swing_Local",
-            "WorldSoundEventId": "SFX_Whip_Swing"
+            "LocalSoundEventId": "SFX_Whip_Swing_Charged_Local",
+            "WorldSoundEventId": "SFX_Whip_Swing_Charged"
           }
         }
       ]

@@ -3,7 +3,8 @@
   "Effects": {
     "ItemAnimationId": "SpinSwingLeftCharging",
     "LocalSoundEventId": "SFX_Whip_Charge_Local",
-    "WorldSoundEventId": "SFX_Whip_Charge"
+    "WorldSoundEventId": "SFX_Whip_Charge",
+    "ClearSoundEventOnFinish": true
   },
   "AllowIndefiniteHold": false,
   "Next": {
