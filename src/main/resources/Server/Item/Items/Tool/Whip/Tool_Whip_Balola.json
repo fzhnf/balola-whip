@@ -63,7 +63,7 @@
     ]
   },
   "Interactions": {
-    "Primary": "Club_Flail_Attack"
+    "Primary": "Whip_Attack"
   },
   "InteractionVars": {
     "Club_Flail_Swing_Left_Effect": {
