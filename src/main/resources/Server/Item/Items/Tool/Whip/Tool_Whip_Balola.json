@@ -190,6 +190,10 @@
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1
+          },
+          "Effects": {
+            "LocalSoundEventId": "SFX_Whip_Impact_Quick",
+            "WorldSoundEventId": "SFX_Whip_Impact_Quick"
           }
         }
       ]
@@ -204,6 +208,10 @@
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1
+          },
+          "Effects": {
+            "LocalSoundEventId": "SFX_Whip_Impact_Quick",
+            "WorldSoundEventId": "SFX_Whip_Impact_Quick"
           }
         }
       ]
@@ -218,6 +226,10 @@
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1
+          },
+          "Effects": {
+            "LocalSoundEventId": "SFX_Whip_Impact_Charged",
+            "WorldSoundEventId": "SFX_Whip_Impact_Charged"
           }
         }
       ]
