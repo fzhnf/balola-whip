@@ -30,6 +30,7 @@
   "Icon": "Icons/ItemsGenerated/Balola_Whip.png",
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
   "MaxDurability": 200,
+  "MaxStack": 1,
   "Tags": {
     "Type": [
       "Tool"

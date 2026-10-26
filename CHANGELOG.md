@@ -20,6 +20,15 @@ Stamina instead of buff-prolonging. Requires Hytale 0.7.4 (server range `>=0.7.4
 - The `ProlongPositiveEffects` interaction and its Java class — the mod is now item JSON plus one effect
   asset, using vanilla `ApplyEffect`.
 
+### Fixed
+
+- The whip stacked to 100. Hytale only defaults an item to stack size 1 when it carries a `Tool`,
+  `Weapon`, `Armor`, `BuilderTool` or `BlockSelectorToolData` block; the whip has none of those, so it
+  got the fallback 100 and a durability-bearing item could be stacked. `MaxStack: 1` is now explicit.
+- Three sound events (`SFX_Whip_Charge`, `SFX_Whip_Charge_Local`, `SFX_Whip_Impact_Quick`) had pitch
+  ranges that did not contain 0, which Hytale rejects at load — that cascaded into `Whip_Attack` and
+  the quick-lash interactions and refused to load the world at all.
+
 ## [0.1.0] - 2026-10-23
 
 First release. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).
