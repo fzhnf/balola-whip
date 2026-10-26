@@ -4,6 +4,22 @@ All notable changes to this project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/);
 this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-10-26
+
+Stamina instead of buff-prolonging. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).
+
+### Changed
+
+- A lash now applies **Whipped** to the target: 5 stamina per second for **4 s** (quick lash) or
+  **8 s** (held lash) — the greater stamina potion's refill rate, no bottle involved.
+- **Whipped** refreshes instead of stacking: the last lash sets the remaining time, so the buff lapses
+  4–8 s after the last hit and the target has to be whipped again to keep it.
+
+### Removed
+
+- The `ProlongPositiveEffects` interaction and its Java class — the mod is now item JSON plus one effect
+  asset, using vanilla `ApplyEffect`.
+
 ## [0.1.0] - 2026-10-23
 
 First release. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).

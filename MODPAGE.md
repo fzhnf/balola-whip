@@ -14,7 +14,7 @@ Keep this file in sync with `manifest.json` when you bump the version.
 **Summary** (short, shows in listings):
 
 ```
-A light whip that deals almost no damage, but stretches the positive status effects already on whatever it hits.
+A light whip that deals no damage, but forces stamina back into whatever it hits.
 ```
 
 **Description** (English, long form):
@@ -22,9 +22,11 @@ A light whip that deals almost no damage, but stretches the positive status effe
 ```
 Balola Whip adds a single item to Hytale: a light one-handed whip that is not a weapon.
 
-A quick lash does 1 damage and adds 20 seconds to every positive status effect the target already has. Holding the swing for about 1.4 seconds and then releasing turns it into a heavier blow: 5 damage and 50 extra seconds. It only ever prolongs effects that are already there — it never applies a new one, and it ignores debuffs and infinite effects. An effect can be extended by at most 4 minutes beyond its own base duration.
+A quick lash deals no damage and makes the target "Whipped" for 4 seconds. Holding the swing for about 1.4 seconds and then releasing applies the same effect for 8 seconds. While Whipped, the target regains 5 stamina per second — the greater stamina potion's rate, without drinking anything. A lash never stacks, only refreshes, so the buff always lapses 4 to 8 seconds after the last hit:
 
-In practice it is a support tool: keep a regeneration or food buff alive through a long fight, or top up an ally's buff without carrying the consumables yourself. In PvP it cuts both ways, because it extends whatever positive effects the target is running.
+to keep someone going, you have to keep whipping them.
+
+In practice it is a support tool: keep a sprinting friend or a boss-tanking ally topped up on stamina, or top up your own bar between fights. It works on any entity, so it cuts both ways in PvP.
 
 The whip inherits the vanilla steel flail's attack chain, so hold-to-charge, the swing animations, chain trails and knockback all behave exactly like the base game. Durability is 200, one point per connecting hit.
 
@@ -45,20 +47,21 @@ Requires Hytale 0.7.4 or newer (server version range >=0.7.4 <0.8.0). Server-sid
 
 ---
 
-## File upload (version 0.1.0)
+## File upload (version 0.2.0)
 
-**File:** `build/libs/BalolaWhip-0.1.0.jar`
+**File:** `build/libs/BalolaWhip-0.2.0.jar`
 **Release type:** Beta
 **Game version:** 0.7.4
 
 **Changelog:**
 
 ```
-First release.
+0.2.0 - the whip now hands out stamina instead of extending buffs.
 
-- Balola Whip: quick lash = 1 damage, +20s to positive effects on the target;
-  held lash = 5 damage, +50s. Cap +240s past an effect's base duration.
-- Never applies effects, skips debuffs and infinite effects.
+- Balola Whip: a lash makes the target "Whipped" - 5 stamina per second for 4s (quick) or 8s (held).
+- Whipped does not stack, only refresh: last hit wins, so the buff lapses 4-8s after the last lash.
+- The whip deals no damage and never wore armour, unchanged.
+- Removed the ProlongPositiveEffects interaction; the mod is now pure assets + vanilla ApplyEffect.
 - 200 durability, 1 per connecting hit.
 - Crafted at the Workbench (Tools) from 4 rope, 2 sticks, 2 light leather.
 - Own model, texture, item icon and mod icon.
@@ -76,7 +79,7 @@ id from the Author Console). Then:
 curseforgeID = <id>
 
 ./gradlew updatePluginManifest build
-cp build/libs/BalolaWhip-0.1.0.jar <Hytale>/UserData/Mods/
+cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
 git commit -am "set curseforge project id" && git push
 ```
 

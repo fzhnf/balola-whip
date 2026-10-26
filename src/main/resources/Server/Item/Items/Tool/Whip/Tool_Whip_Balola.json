@@ -15,7 +15,7 @@
     "Compatible": true
   },
   "IconProperties": {
-    "Scale": 0.43,
+    "Scale": 0.36,
     "Translation": [
       -24,
       -28
@@ -183,10 +183,10 @@
     "Club_Flail_Swing_Left_Damage": {
       "Interactions": [
         {
-          "Type": "ProlongPositiveEffects",
+          "Type": "ApplyEffect",
+          "EffectId": "Balola_Whipped",
           "Entity": "Target",
-          "BonusSeconds": 20,
-          "MaxBonusSeconds": 240,
+          "Duration": 4,
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1
@@ -201,10 +201,10 @@
     "Club_Flail_Swing_Right_Damage": {
       "Interactions": [
         {
-          "Type": "ProlongPositiveEffects",
+          "Type": "ApplyEffect",
+          "EffectId": "Balola_Whipped",
           "Entity": "Target",
-          "BonusSeconds": 20,
-          "MaxBonusSeconds": 240,
+          "Duration": 4,
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1
@@ -219,10 +219,10 @@
     "Club_Flail_Spin_Swing_Left_Charged_Damage": {
       "Interactions": [
         {
-          "Type": "ProlongPositiveEffects",
+          "Type": "ApplyEffect",
+          "EffectId": "Balola_Whipped",
           "Entity": "Target",
-          "BonusSeconds": 50,
-          "MaxBonusSeconds": 240,
+          "Duration": 8,
           "Next": {
             "Type": "ModifyInventory",
             "AdjustHeldItemDurability": -1

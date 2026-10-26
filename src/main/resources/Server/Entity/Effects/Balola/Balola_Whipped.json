@@ -1,0 +1,10 @@
+{
+  "$Comment": "Wherever it is applied, refills 5 stamina every second - the greater stamina potion, without the bottle. Short duration on purpose: the lash has to land again to keep it.",
+  "StatModifiers": {
+    "Stamina": 5
+  },
+  "DamageCalculatorCooldown": 1,
+  "OverlapBehavior": "Overwrite",
+  "Duration": 4,
+  "StatusEffectIcon": "UI/StatusEffects/Stamina/Small.png"
+}

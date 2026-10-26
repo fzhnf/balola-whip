@@ -1,8 +1,8 @@
 {
     "Group": "TimaGutmensch",
     "Name": "BalolaWhip",
-    "Version": "0.1.0",
-    "Description": "Adds the Balola Whip, a light whip that prolongs the positive status effects of the entity it hits",
+    "Version": "0.2.0",
+    "Description": "Adds the Balola Whip, a light whip that forces stamina back into the entity it hits",
     "Authors": [
         {
             "Name": "TimaGutmensch"

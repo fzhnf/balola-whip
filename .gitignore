@@ -11,3 +11,5 @@ run/
 .settings/
 .vscode
 .temp/
+# Extracted vanilla animation clips and sound candidates: reference only, not ours to ship.
+art/

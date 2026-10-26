@@ -77,7 +77,7 @@
                         "angle": 0
                       },
                       "right": {
-                        "offset": {"x": 39, "y": 12},
+                        "offset": {"x": 55, "y": 32},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
@@ -119,11 +119,11 @@
                         "stretch": {"x": 1, "y": 1, "z": 1},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 14, "y": 7, "z": 2}
+                          "size": {"x": 16, "y": 7, "z": 2}
                         },
                         "textureLayout": {
                           "back": {
-                            "offset": {"x": 14, "y": 33},
+                            "offset": {"x": 12, "y": 33},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -213,19 +213,19 @@
                         {
                           "id": "7",
                           "name": "Chain2",
-                          "position": {"x": 3.63397, "y": -0.36603, "z": 0},
+                          "position": {"x": 7.63397, "y": -0.36603, "z": 0},
                           "orientation": {"x": 0.00756, "y": 0.00436, "z": -0.49998, "w": 0.86599},
                           "shape": {
                             "type": "box",
-                            "offset": {"x": 7.73216, "y": 2.73199, "z": -0.01277},
+                            "offset": {"x": 7.59823, "y": 0.63389, "z": -0.01916},
                             "stretch": {"x": 1, "y": 1, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 14, "y": 7, "z": 2}
+                              "size": {"x": 15, "y": 7, "z": 2}
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 26, "y": 33},
+                                "offset": {"x": 25, "y": 33},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               },
@@ -264,19 +264,19 @@
                             {
                               "id": "8",
                               "name": "Chain2-Side",
-                              "position": {"x": -7.73216, "y": -2.73199, "z": 0.01277},
+                              "position": {"x": -9.59824, "y": -4.09799, "z": 0.01916},
                               "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 7.73216, "y": 0.01277, "z": 2.73199},
+                                "offset": {"x": 9.59824, "y": 0.01916, "z": 4.09799},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 14, "y": 7, "z": 2}
+                                  "size": {"x": 17, "y": 7, "z": 2}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 26, "y": 33},
+                                    "offset": {"x": 23, "y": 33},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
@@ -315,19 +315,19 @@
                             {
                               "id": "9",
                               "name": "Chain3",
-                              "position": {"x": 4.26784, "y": -2.73199, "z": 0.01277},
+                              "position": {"x": 7.40176, "y": -0.09799, "z": 0.01916},
                               "orientation": {"x": -0.00806, "y": -0.00334, "z": -0.38267, "w": 0.92384},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": 7.06973, "y": 4.12193, "z": 0.0698},
+                                "offset": {"x": 8.88004, "y": -0.31011, "z": 0.0349},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
-                                  "size": {"x": 14, "y": 7, "z": 1}
+                                  "size": {"x": 18, "y": 7, "z": 1}
                                 },
                                 "textureLayout": {
                                   "back": {
-                                    "offset": {"x": 38, "y": 32},
+                                    "offset": {"x": 34, "y": 32},
                                     "mirror": {"x": false, "y": false},
                                     "angle": 0
                                   },
@@ -366,19 +366,19 @@
                                 {
                                   "id": "10",
                                   "name": "Chain3-Side",
-                                  "position": {"x": -7.06973, "y": -4.12193, "z": -0.0698},
+                                  "position": {"x": -9.58754, "y": -6.05342, "z": -0.1047},
                                   "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                                   "shape": {
                                     "type": "box",
-                                    "offset": {"x": 7.06973, "y": -0.0698, "z": 4.12193},
+                                    "offset": {"x": 9.58754, "y": -0.1047, "z": 6.05342},
                                     "stretch": {"x": 1, "y": 1, "z": 1},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 14, "y": 7, "z": 1}
+                                      "size": {"x": 16, "y": 7, "z": 1}
                                     },
                                     "textureLayout": {
                                       "back": {
-                                        "offset": {"x": 38, "y": 32},
+                                        "offset": {"x": 36, "y": 32},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       },
@@ -417,7 +417,7 @@
                                 {
                                   "id": "11",
                                   "name": "Chain4",
-                                  "position": {"x": 4.93027, "y": -4.12193, "z": -0.0698},
+                                  "position": {"x": 8.41246, "y": -0.05342, "z": -0.1047},
                                   "orientation": {"x": 0.00865, "y": 0.00114, "z": -0.13052, "w": 0.99141},
                                   "shape": {
                                     "type": "none",
@@ -436,7 +436,7 @@
                                     {
                                       "id": "12",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                                       "shape": {
                                         "type": "none",
@@ -455,7 +455,7 @@
                                     {
                                       "id": "13",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": -0.70711, "y": 0, "z": 0, "w": 0.70711},
                                       "shape": {
                                         "type": "none",
@@ -474,7 +474,7 @@
                                     {
                                       "id": "14",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": -0.36497, "y": -0.11507, "z": -0.27782, "w": 0.88112},
                                       "shape": {
                                         "type": "none",
@@ -493,22 +493,18 @@
                                     {
                                       "id": "15",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -3.24286, "y": -7.34769, "z": 0.10923},
                                       "orientation": {"x": -0.5, "y": 0.5, "z": 0.5, "w": 0.5},
                                       "shape": {
-                                        "type": "box",
-                                        "offset": {"x": -0.01593, "y": -3.00031, "z": 4.49974},
+                                        "type": "quad",
+                                        "offset": {"x": -0.04484, "y": -7.5005, "z": 6.99921},
                                         "stretch": {"x": 1, "y": 1.2, "z": 1.2},
                                         "settings": {
                                           "isPiece": false,
-                                          "size": {"x": 7, "y": 29, "z": 1}
+                                          "size": {"x": 7, "y": 32},
+                                          "normal": "+Z"
                                         },
                                         "textureLayout": {
-                                          "back": {
-                                            "offset": {"x": 4, "y": 12},
-                                            "mirror": {"x": false, "y": false},
-                                            "angle": 0
-                                          },
                                           "front": {
                                             "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
@@ -524,7 +520,7 @@
                                     {
                                       "id": "16",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": -0.36497, "y": 0.11507, "z": 0.27782, "w": 0.88112},
                                       "shape": {
                                         "type": "none",
@@ -543,7 +539,7 @@
                                     {
                                       "id": "17",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": 0.36497, "y": 0.11507, "z": -0.27782, "w": 0.88112},
                                       "shape": {
                                         "type": "none",
@@ -562,7 +558,7 @@
                                     {
                                       "id": "18",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": 0.36497, "y": -0.11507, "z": 0.27782, "w": 0.88112},
                                       "shape": {
                                         "type": "none",
@@ -581,22 +577,18 @@
                                     {
                                       "id": "19",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -3.24286, "y": -0.34769, "z": 0.10923},
                                       "orientation": {"x": 0.70711, "y": -0.70711, "z": 0, "w": 0},
                                       "shape": {
-                                        "type": "box",
-                                        "offset": {"x": -3.99974, "y": -3.00031, "z": 0.48407},
+                                        "type": "quad",
+                                        "offset": {"x": 0.00079, "y": -7.5005, "z": -0.04484},
                                         "stretch": {"x": 1, "y": 1.2, "z": 1.2},
                                         "settings": {
                                           "isPiece": false,
-                                          "size": {"x": 7, "y": 29, "z": 1}
+                                          "size": {"x": 7, "y": 32},
+                                          "normal": "+Z"
                                         },
                                         "textureLayout": {
-                                          "back": {
-                                            "offset": {"x": 4, "y": 12},
-                                            "mirror": {"x": false, "y": false},
-                                            "angle": 0
-                                          },
                                           "front": {
                                             "offset": {"x": 4, "y": 12},
                                             "mirror": {"x": false, "y": false},
@@ -612,7 +604,7 @@
                                     {
                                       "id": "20",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
                                       "shape": {
                                         "type": "none",
@@ -631,7 +623,7 @@
                                     {
                                       "id": "21",
                                       "name": "Spike",
-                                      "position": {"x": 0, "y": 0, "z": 0},
+                                      "position": {"x": -4.24285, "y": -7.3476, "z": 0.10471},
                                       "orientation": {"x": -0.5, "y": -0.5, "z": 0.5, "w": 0.5},
                                       "shape": {
                                         "type": "none",

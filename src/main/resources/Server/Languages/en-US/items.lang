@@ -1,2 +1,2 @@
 balola_whip.name = Balola Whip
-balola_whip.description = A whip that deals no damage at all, but stretches the positive effects already on whatever it lashes: a quick flick adds 20 seconds, a held swing adds 50, up to 4 minutes past an effect's normal length.
+balola_whip.description = A whip that deals no damage at all, but forces stamina back into whatever it lashes: a quick flick refills stamina for 4 seconds, a held swing for 8. Whipped targets regain 5 stamina a second, so a lash has to land again and again to keep them going.
