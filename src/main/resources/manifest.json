@@ -20,6 +20,6 @@
     "ServerVersion": ">=0.7.4 <0.8.0",
     "Main": "dev.timagutmensch.whip.BalolaWhipPlugin",
     "UpdateChecker": {
-        "CurseForge": ""
+        "CurseForge": "1761566"
     }
 }

@@ -45,6 +45,24 @@ Requires Hytale 0.7.4 or newer (server version range >=0.7.4 <0.8.0). Server-sid
 
 **Logo Image:** 512×512 render of the whip (same Rotation 90° / Inclination 25° pose as the icons)
 
+**Gallery:** in this order
+
+1. `screenshots-2.png` (1524×954) — whip in hand on a server, long chain and spikes visible, hotbar icon in slot 2
+2. `screenshots.png` (937×629) — earlier shot from 0.1.0
+
+---
+
+## Project
+
+**Project id:** `1761566` — set as `curseforgeID` in `gradle.properties`, which is what fills
+`UpdateChecker.CurseForge` in the manifest. The in-game update check reads that, so a new file on
+CurseForge is picked up by installed copies without republishing the mod.
+
+```bash
+./gradlew build
+cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
+```
+
 ---
 
 ## File upload (version 0.2.0)
@@ -69,28 +87,24 @@ Requires Hytale 0.7.4 or newer (server version range >=0.7.4 <0.8.0). Server-sid
 
 ---
 
-## After the project exists
-
-The project id is the number in the project URL (`curseforge.com/hytale/mods/<slug>` → use the numeric
-id from the Author Console). Then:
+## After uploading a file
 
 ```bash
-# gradle.properties
-curseforgeID = <id>
-
-./gradlew updatePluginManifest build
-cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
-git commit -am "set curseforge project id" && git push
+git tag -a v0.2.0 -m "0.2.0: stamina instead of buff extension"
+git push origin main --tags
 ```
 
-That fills `UpdateChecker.CurseForge` in the manifest, which is what the in-game update check reads.
+Tag after the jar is uploaded, so the tag matches the file people actually downloaded.
 
 ---
 
 ## Checklist before submitting
 
-- [ ] In-game smoke test after the namespace change (mod shows as `TimaGutmensch:BalolaWhip`)
-- [ ] Screenshots for the gallery: item in hand, the two swing states, crafting recipe
+- [x] In-game smoke test after the namespace change (mod shows as `TimaGutmensch:BalolaWhip`)
+- [x] Screenshots for the gallery
 - [ ] Logo image 512×512
-- [ ] `LICENSE` and `CHANGELOG.md` present in the repo (done)
-- [ ] Version bumped consistently in `gradle.properties` and `CHANGELOG.md`
+- [x] `LICENSE` and `CHANGELOG.md` present in the repo
+- [x] Version bumped consistently in `gradle.properties` and `CHANGELOG.md`
+- [ ] Item icon re-rendered from the long model at `IconProperties.Scale` 0.36 — the committed
+      `Balola_Whip.png` is still the 0.1.0 render, so the inventory icon shows the short whip
+- [ ] Mod icon at 256×256 — the re-export handed over was 128×128
