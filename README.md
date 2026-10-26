@@ -45,6 +45,7 @@ src/main/resources/
 ## Building
 
 ```bash
+python3 tools/check-assets.py   # catches what Hytale rejects at boot, before you ship it
 ./gradlew build
 cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
 ```

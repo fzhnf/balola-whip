@@ -9,7 +9,7 @@
     "Sounds/Blocks/Cloth/Cloth_Break_04.ogg"
    ],
    "RandomSettings": {
-    "MinPitch": 2,
+    "MinPitch": 0,
     "MaxPitch": 6,
     "MinVolume": -6
    },
