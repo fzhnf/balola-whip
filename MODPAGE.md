@@ -80,9 +80,11 @@ cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
 - Whipped does not stack, only refresh: last hit wins, so the buff lapses 4-8s after the last lash.
 - The whip deals no damage and never wore armour, unchanged.
 - Removed the ProlongPositiveEffects interaction; the mod is now pure assets + vanilla ApplyEffect.
+- Fixed: the whip could be stacked to 100. It now stacks to 1, like any other tool with durability.
+- Fixed: three whip sound events had invalid pitch ranges, which could stop a world from loading.
+- Longer chain: the model was re-spaced on its chain joints, so the whip reaches further than 0.1.0.
 - 200 durability, 1 per connecting hit.
 - Crafted at the Workbench (Tools) from 4 rope, 2 sticks, 2 light leather.
-- Own model, texture, item icon and mod icon.
 ```
 
 ---
