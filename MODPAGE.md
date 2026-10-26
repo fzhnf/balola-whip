@@ -74,17 +74,22 @@ cp build/libs/BalolaWhip-0.2.0.jar <Hytale>/UserData/Mods/
 **Changelog:**
 
 ```
-0.2.0 - the whip now hands out stamina instead of extending buffs.
+0.2.0 - after some decisions, to make it more "aligned" with the whipping
+person, the whipped entity now hands out stamina instead of extending buffs.
 
-- Balola Whip: a lash makes the target "Whipped" - 5 stamina per second for 4s (quick) or 8s (held).
-- Whipped does not stack, only refresh: last hit wins, so the buff lapses 4-8s after the last lash.
-- The whip deals no damage and never wore armour, unchanged.
-- Removed the ProlongPositiveEffects interaction; the mod is now pure assets + vanilla ApplyEffect.
-- Fixed: the whip could be stacked to 100. It now stacks to 1, like any other tool with durability.
-- Fixed: three whip sound events had invalid pitch ranges, which could stop a world from loading.
-- Longer chain: the model was re-spaced on its chain joints, so the whip reaches further than 0.1.0.
-- 200 durability, 1 per connecting hit.
-- Crafted at the Workbench (Tools) from 4 rope, 2 sticks, 2 light leather.
+Gameplay changes:
+- a lash gives "Whipped" effect to the Whipped entity, it's 5 stamina for 4s,
+8s if the whip is charged.
+- "Whipped" effect doesn't stack, only refresh.
+- The whip now deals no damage and thus never wore armour.
+- The whip also no longer breaks blocks or plants, entities only.
+- previously can stack to 100. Its now decreased to 1.
+
+Design changes:
+- The whip sounds were replaced with cloth whooshes instead of the
+flail's chain rattle.
+- Longer rope 3d model, but this is either good design choice, or maybe a bad
+idea.
 ```
 
 ---

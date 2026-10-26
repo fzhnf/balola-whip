@@ -6,19 +6,24 @@ this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.2.0] - 2026-10-26
 
-Stamina instead of buff-prolonging. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).
+After some decisions, to make it more "aligned" with the whipping person, the whipped entity now hands
+out stamina instead of extending buffs. Requires Hytale 0.7.4 (server range `>=0.7.4 <0.8.0`).
 
-### Changed
+### Gameplay
 
-- A lash now applies **Whipped** to the target: 5 stamina per second for **4 s** (quick lash) or
-  **8 s** (held lash) — the greater stamina potion's refill rate, no bottle involved.
-- **Whipped** refreshes instead of stacking: the last lash sets the remaining time, so the buff lapses
-  4–8 s after the last hit and the target has to be whipped again to keep it.
+- A lash makes the target **Whipped** — 5 stamina per second for **4 s** (quick) or **8 s** (held).
+- **Whipped** does not stack, only refresh: last hit wins, so the buff lapses 4–8 s after the last lash.
+- The whip now deals no damage, and so never wore the target's armour.
+- The whip also no longer breaks blocks or plants — entities only.
 
-### Removed
+### Design
 
-- The `ProlongPositiveEffects` interaction and its Java class — the mod is now item JSON plus one effect
-  asset, using vanilla `ApplyEffect`.
+- Whip sounds replaced. Swings are cloth-foley whooshes instead of the flail's chain rattle, the held
+  swing adds a crack over the charging whoosh, and the impacts land as cloth snap plus rope crack, with
+  a wooden thud behind the held hit.
+- Longer chain: the model was re-spaced on its `Chain`/`Chain2`/`Chain3` joints rather than by stretching
+  the links, so the whip reaches further than 0.1.0. Whether that reads better at full swing or worse is
+  still up for debate.
 
 ### Fixed
 
@@ -28,6 +33,11 @@ Stamina instead of buff-prolonging. Requires Hytale 0.7.4 (server range `>=0.7.4
 - Three sound events (`SFX_Whip_Charge`, `SFX_Whip_Charge_Local`, `SFX_Whip_Impact_Quick`) had pitch
   ranges that did not contain 0, which Hytale rejects at load — that cascaded into `Whip_Attack` and
   the quick-lash interactions and refused to load the world at all.
+
+### Removed
+
+- The `ProlongPositiveEffects` interaction and its Java class — the mod is now item JSON plus one effect
+  asset, using vanilla `ApplyEffect`.
 
 ## [0.1.0] - 2026-10-23
 
