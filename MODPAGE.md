@@ -14,28 +14,35 @@ Keep this file in sync with `manifest.json` when you bump the version.
 **Summary** (short, shows in listings):
 
 ```
-A light whip that deals no damage, but forces stamina back into whatever it hits.
+A whip that deals no damage: every lash gives the target a short stamina refill that lapses unless you keep whipping.
 ```
 
 **Description** (English, long form):
 
 ```
-Balola Whip adds a single item to Hytale: a light one-handed whip that is not a weapon.
+Balola Whip adds one item to Hytale: a light one-handed whip that is not a weapon.
 
-A quick lash deals no damage and makes the target "Whipped" for 4 seconds. Holding the swing for about 1.4 seconds and then releasing applies the same effect for 8 seconds. While Whipped, the target regains 5 stamina per second — the greater stamina potion's rate, without drinking anything. A lash never stacks, only refreshes, so the buff always lapses 4 to 8 seconds after the last hit:
+A quick lash deals no damage and makes the target "Whipped" for 4 seconds. Hold the swing for about 1.4 seconds before releasing and it applies the same effect for 8 seconds instead. While Whipped the target regains 5 stamina per second - the greater stamina potion's rate, without drinking anything.
 
-to keep someone going, you have to keep whipping them.
+The effect never stacks, it only refreshes: the last hit sets the remaining time, so Whipped always lapses 4 to 8 seconds after your last lash. To keep someone going, you have to keep whipping them.
 
-In practice it is a support tool: keep a sprinting friend or a boss-tanking ally topped up on stamina, or top up your own bar between fights. It works on any entity, so it cuts both ways in PvP.
+Who it is for: keeping a sprinting friend or a boss-tanking ally topped up, or stretching your own bar between fights. It works on any entity, players included, so in PvP it cuts both ways.
 
-The whip inherits the vanilla steel flail's attack chain, so hold-to-charge, the swing animations, chain trails and knockback all behave exactly like the base game. Durability is 200, one point per connecting hit.
+It only ever targets entities - the whip does not break blocks or plants, and it deals no damage at all, so it never wears down armour.
+
+Feel:
+- Swings are cloth whooshes rather than the flail's chain rattle. The held swing adds a crack, and impacts land as cloth snap and rope crack with a wooden thud on the held hit.
+- The chain is longer than the base game's flail: the link joints were moved apart rather than the links stretched, so it reaches further.
+- Charge timing, animations, trails and knockback are all inherited from the vanilla steel flail chain, so it handles exactly like the base game. Only the damage and the effect are modded.
+
+Durability is 200, one point per connecting hit, and it does not stack.
 
 Crafting (Workbench, Tools tab, 3 seconds):
-  - Deco Rope x4
-  - Stick x2
-  - Light Leather x2
+- Deco Rope x4
+- Stick x2
+- Light Leather x2
 
-Requires Hytale 0.7.4 or newer (server version range >=0.7.4 <0.8.0). Server-side plugin plus an asset pack bundled in the jar; no client install needed beyond enabling the mod for a world.
+Requires Hytale 0.7.4 or newer (server version range >=0.7.4 <0.8.0). Server-side plugin plus the asset pack in the same jar; nothing to install on the client beyond enabling the mod for a world.
 ```
 
 **Project License:** MIT
